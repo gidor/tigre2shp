@@ -4,8 +4,9 @@ import (
 	"fmt"
 	"os"
 	"path/filepath"
-	"tigre2shp/config"
-	"tigre2shp/tigre"
+
+	"github.com/gidor/tigre2shp/config"
+	"github.com/gidor/tigre2shp/tigre"
 
 	"github.com/gen2brain/dlgs"
 )

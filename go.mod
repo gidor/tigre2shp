@@ -1,4 +1,4 @@
-module tigre2shp
+module github.com/gidor/tigre2shp
 
 go 1.12
 
