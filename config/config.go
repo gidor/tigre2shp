@@ -74,6 +74,16 @@ func GetArray(root interface{}, keys ...string) ([]interface{}, bool) {
 	return m, ok
 }
 
+// GetArray
+func GetMap(root interface{}, keys ...string) (map[string]interface{}, bool) {
+	value, ok := Navigate(root, keys...)
+	m, ok := value.(map[string]interface{})
+	if !ok {
+		return nil, false
+	}
+	return m, ok
+}
+
 // GetInt
 func GetInt(root interface{}, keys ...string) (int, bool) {
 	value, ok := Navigate(root, keys...)

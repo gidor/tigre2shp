@@ -37,7 +37,7 @@ type FieldDescription struct {
 	Len      int
 	Decimals int
 	Domain   int
-	Defalt   string
+	Default  string
 	Nullable bool
 }
 
@@ -53,10 +53,10 @@ type AttrbuteDescription []FieldDescription
 type AttributeMap map[string]interface{}
 
 type FeatureDescription struct {
-	Code         int
-	Name         string
-	GeometryType int
-	Attribute    []FieldDescription
+	Code         int                // Codie della feature
+	Name         string             // nome della feature
+	GeometryType int                // tipo geometria
+	Attribute    []FieldDescription // descrzione attributi
 }
 
 // FeatureImpl T base implementation tehe data rappraetning the Feature

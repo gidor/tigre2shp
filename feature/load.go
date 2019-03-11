@@ -37,7 +37,7 @@ func Load() []FeatureDescription {
 			iat := new(FieldDescription)
 			iat.FName, _ = config.GetString(att, "Name")
 			iat.Domain, _ = config.GetInt(att, "Domain")
-			iat.Defalt, _ = config.GetString(att, "Default")
+			iat.Default, _ = config.GetString(att, "Default")
 			at_null, _ := config.GetInt(att, "NotNull")
 			iat.Nullable = (at_null == 0)
 			switch format {

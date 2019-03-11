@@ -1,4 +1,8 @@
 {
+  "Project": {
+    "Comune": 1,
+    "NomeComune": "Pippo"
+  },
   "Features": [
     {
       "FCode": 10,
@@ -4957,6 +4961,107 @@
           "Format": "DECIMALE"
         }
       ]
+    }
+  ],
+  "Mappings": [
+    {
+      "In": 10,
+      "Out": 10,
+      "Atts": {
+        "SYS_COD_COMUNE": "<Project.Comune>",
+        "COMUNE": "<Project.NomeCoune>",
+        "NODO_INIZIO": "<3>",
+        "NODO_FINE": "<4>",
+        "LUNGHEZZA": "<5>",
+        "DATA_POSA": "<8>/<7>/<6>",
+        "IN_GAS": 1,
+        "GAS_PRESS": "<15>",
+        "COD_MAT": "<10>",
+        "COD_DIAM": "<9>",
+        "COD_GIUNTO": "<12>",
+        "COD_CL_POSA": "<17>"
+      }
+    },
+    {
+      "In": 100,
+      "Out": 10,
+      "Atts": {
+        "SYS_COD_COMUNE": "<Project.Comune>",
+        "COMUNE": "<Project.NomeCoune>",
+        "NODO_INIZIO": "<3>",
+        "NODO_FINE": "<4>",
+        "LUNGHEZZA": "<5>",
+        "DATA_POSA": "<8>/<7>/<6>",
+        "IN_GAS": 1,
+        "GAS_PRESS": "<15>",
+        "COD_MAT": "<10>",
+        "COD_DIAM": "<9>",
+        "COD_GIUNTO": "<12>",
+        "COD_CL_POSA": "<17>"
+      }
+    },
+    {
+      "In": 150,
+      "Out": 10,
+      "Atts": {
+        "SYS_COD_COMUNE": "<Project.Comune>",
+        "COMUNE": "<Project.NomeCoune>",
+        "NODO_INIZIO": "<3>",
+        "NODO_FINE": "<4>",
+        "LUNGHEZZA": "<5>",
+        "DATA_POSA": "<8>/<7>/<6>",
+        "IN_GAS": 1,
+        "GAS_PRESS": "<15>",
+        "COD_MAT": "<10>",
+        "COD_DIAM": "<9>",
+        "COD_GIUNTO": "<12>",
+        "COD_CL_POSA": "<17>"
+      }
+    },
+    {
+      "In": 200,
+      "Out": 10,
+      "Atts": {
+        "SYS_COD_COMUNE": "<Project.Comune>",
+        "COMUNE": "<Project.NomeCoune>",
+        "NODO_INIZIO": "<3>",
+        "NODO_FINE": "<4>",
+        "LUNGHEZZA": "<5>",
+        "DATA_POSA": "<8>/<7>/<6>",
+        "IN_GAS": 1,
+        "GAS_PRESS": "<15>",
+        "COD_MAT": "<10>",
+        "COD_DIAM": "<9>",
+        "COD_GIUNTO": "<12>",
+        "COD_CL_POSA": "<17>"
+      }
+    },
+    {
+      "In": 220,
+      "Out": 10,
+      "Atts": {
+        "SYS_COD_COMUNE": "<Project.Comune>",
+        "COMUNE": "<Project.NomeCoune>",
+        "NODO_INIZIO": "<3>",
+        "NODO_FINE": "<4>",
+        "LUNGHEZZA": "<5>",
+        "DATA_POSA": "<8>/<7>/<6>",
+        "IN_GAS": 1,
+        "GAS_PRESS": "<15>",
+        "COD_MAT": "<10>",
+        "COD_DIAM": "<9>",
+        "COD_GIUNTO": "<12>",
+        "COD_CL_POSA": "<17>"
+      }
+    },
+    {
+      "In": 810,
+      "Out": 810,
+      "Atts": {
+        "SYS_COD_COMUNE": "<Project.Comune>",
+        "COMUNE": "<Project.NomeCoune>",
+        "NUM_NODO": "<3>"
+      }
     }
   ]
 }
