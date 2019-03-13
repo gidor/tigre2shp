@@ -4968,12 +4968,10 @@
       "In": 10,
       "Out": 10,
       "Atts": {
-        "SYS_COD_COMUNE": "<Project.Comune>",
-        "COMUNE": "<Project.NomeCoune>",
         "NODO_INIZIO": "<3>",
         "NODO_FINE": "<4>",
         "LUNGHEZZA": "<5>",
-        "DATA_POSA": "<8>/<7>/<6>",
+        "DATA_POSA": "<6><7><8>",
         "IN_GAS": 1,
         "GAS_PRESS": "<15>",
         "COD_MAT": "<10>",
@@ -4986,12 +4984,10 @@
       "In": 100,
       "Out": 10,
       "Atts": {
-        "SYS_COD_COMUNE": "<Project.Comune>",
-        "COMUNE": "<Project.NomeCoune>",
         "NODO_INIZIO": "<3>",
         "NODO_FINE": "<4>",
         "LUNGHEZZA": "<5>",
-        "DATA_POSA": "<8>/<7>/<6>",
+        "DATA_POSA": "<6><7><8>",
         "IN_GAS": 1,
         "GAS_PRESS": "<15>",
         "COD_MAT": "<10>",
@@ -5004,12 +5000,10 @@
       "In": 150,
       "Out": 10,
       "Atts": {
-        "SYS_COD_COMUNE": "<Project.Comune>",
-        "COMUNE": "<Project.NomeCoune>",
         "NODO_INIZIO": "<3>",
         "NODO_FINE": "<4>",
         "LUNGHEZZA": "<5>",
-        "DATA_POSA": "<8>/<7>/<6>",
+        "DATA_POSA": "<6><7><8>",
         "IN_GAS": 1,
         "GAS_PRESS": "<15>",
         "COD_MAT": "<10>",
@@ -5022,12 +5016,10 @@
       "In": 200,
       "Out": 10,
       "Atts": {
-        "SYS_COD_COMUNE": "<Project.Comune>",
-        "COMUNE": "<Project.NomeCoune>",
         "NODO_INIZIO": "<3>",
         "NODO_FINE": "<4>",
         "LUNGHEZZA": "<5>",
-        "DATA_POSA": "<8>/<7>/<6>",
+        "DATA_POSA": "<6><7><8>",
         "IN_GAS": 1,
         "GAS_PRESS": "<15>",
         "COD_MAT": "<10>",
@@ -5040,12 +5032,10 @@
       "In": 220,
       "Out": 10,
       "Atts": {
-        "SYS_COD_COMUNE": "<Project.Comune>",
-        "COMUNE": "<Project.NomeCoune>",
         "NODO_INIZIO": "<3>",
         "NODO_FINE": "<4>",
         "LUNGHEZZA": "<5>",
-        "DATA_POSA": "<8>/<7>/<6>",
+        "DATA_POSA": "<6><7><8>",
         "IN_GAS": 1,
         "GAS_PRESS": "<15>",
         "COD_MAT": "<10>",
@@ -5058,9 +5048,241 @@
       "In": 810,
       "Out": 810,
       "Atts": {
-        "SYS_COD_COMUNE": "<Project.Comune>",
-        "COMUNE": "<Project.NomeCoune>",
         "NUM_NODO": "<3>"
+      }
+    },
+    {
+      "In": 715,
+      "Out": 715,
+      "Atts": {
+        "IN_GAS": 1,
+        "LUNGHEZZA": "<10>",
+        "COD_MAT": "<5>",
+        "COD_DIAM": "<1>"
+      }
+    },
+    {
+      "In": 720,
+      "Out": 715,
+      "Atts": {
+        "IN_GAS": 1,
+        "LUNGHEZZA": "<10>",
+        "COD_MAT": "<5>",
+        "COD_DIAM": "<1>"
+      }
+    },
+    {
+      "In": 725,
+      "Out": 715,
+      "Atts": {
+        "IN_GAS": 1,
+        "LUNGHEZZA": "<10>",
+        "COD_MAT": "<5>",
+        "COD_DIAM": "<1>"
+      }
+    },
+    {
+      "In": 730,
+      "Out": 715,
+      "Atts": {
+        "IN_GAS": 1,
+        "LUNGHEZZA": "<10>",
+        "COD_MAT": "<5>",
+        "COD_DIAM": "<1>"
+      }
+    },
+    {
+      "In": 732,
+      "Out": 715,
+      "Atts": {
+        "IN_GAS": 1,
+        "LUNGHEZZA": "<10>",
+        "COD_MAT": "<5>",
+        "COD_DIAM": "<1>"
+      }
+    },
+    {
+      "In": 765,
+      "Out": 790,
+      "Atts": {
+        "GAS_SEDETECNICA": null,
+        "COD_IMP_RID": "<1>",
+        "GAS_PORTNOM": "<2>",
+        "GAS_PORTMAX": "<3>"
+      }
+    },
+    {
+      "In": 790,
+      "Out": 790,
+      "Atts": {
+        "GAS_SEDETECNICA": null,
+        "COD_IMP_RID": "<1>",
+        "DATA_POSA": "<4><5><6>",
+        "GAS_PORTNOM": "<2>",
+        "GAS_PORTMAX": "<3>"
+      }
+    },
+    {
+      "In": 695,
+      "Out": 695,
+      "Atts": {
+        "LUNGHEZZA": "<3>",
+        "COD_TIPO_PROT": "<1>",
+        "COD_DIAM": "<2>"
+      }
+    },
+    {
+      "In": 65,
+      "Out": 65,
+      "Atts": {
+        "COD_DIAM_MONTE": "<1>",
+        "COD_DIAM_VALLE": "<2>"
+      }
+    },
+    {
+      "In": 660,
+      "Out": 65,
+      "Atts": {
+        "COD_DIAM_MONTE": "<1>",
+        "COD_DIAM_VALLE": "<2>"
+      }
+    },
+    {
+      "In": 750,
+      "Out": 65,
+      "Atts": {
+        "COD_DIAM_MONTE": "<1>",
+        "COD_DIAM_VALLE": "<2>"
+      }
+    },
+    {
+      "In": 660,
+      "Out": 65,
+      "Atts": {
+        "COD_DIAM_MONTE": "<1>",
+        "COD_DIAM_VALLE": "<2>"
+      }
+    },
+    {
+      "In": 50,
+      "Out": 50,
+      "Atts": null
+    },
+    {
+      "In": 600,
+      "Out": 50,
+      "Atts": null
+    },
+    {
+      "In": 740,
+      "Out": 50,
+      "Atts": null
+    },
+    {
+      "In": 35,
+      "Out": 30,
+      "Atts": {
+        "COD_SED_TEC": "<>",
+        "COD_EQUIPMENT": "<>",
+        "GAS_PRESS": 1,
+        "NUM_SCHEDA": "<>",
+        "DATA_POSA": "<4><5><6>",
+        "SEDE_VALVOLA": 9999
+      }
+    },
+    {
+      "In": 40,
+      "Out": 30,
+      "Atts": {
+        "COD_SED_TEC": "<>",
+        "COD_EQUIPMENT": "<>",
+        "GAS_PRESS": 1,
+        "NUM_SCHEDA": "<>",
+        "DATA_POSA": "<4><5><6>",
+        "SEDE_VALVOLA": 2
+      }
+    },
+    {
+      "In": 45,
+      "Out": 30,
+      "Atts": {
+        "COD_SED_TEC": "<>",
+        "COD_EQUIPMENT": "<>",
+        "GAS_PRESS": 1,
+        "NUM_SCHEDA": "<>",
+        "DATA_POSA": "<4><5><6>",
+        "SEDE_VALVOLA": 3
+      }
+    },
+    {
+      "In": 450,
+      "Out": 30,
+      "Atts": {
+        "COD_SED_TEC": "<>",
+        "COD_EQUIPMENT": "<>",
+        "GAS_PRESS": 2,
+        "NUM_SCHEDA": "<>",
+        "DATA_POSA": "<4><5><6>",
+        "SEDE_VALVOLA": 1
+      }
+    },
+    {
+      "In": 500,
+      "Out": 30,
+      "Atts": {
+        "COD_SED_TEC": "<>",
+        "COD_EQUIPMENT": "<>",
+        "GAS_PRESS": 2,
+        "NUM_SCHEDA": "<>",
+        "DATA_POSA": "<4><5><6>",
+        "SEDE_VALVOLA": 1
+      }
+    },
+    {
+      "In": 80,
+      "Out": 80,
+      "Atts": null
+    },
+    {
+      "In": 675,
+      "Out": 80,
+      "Atts": null
+    },
+    {
+      "In": 780,
+      "Out": 780,
+      "Atts": {
+        "GAS_PORTNOM": "<18>",
+        "GAS_NLINRID": "<28>"
+      }
+    },
+    {
+      "In": 809,
+      "Out": 809,
+      "Atts": null
+    },
+    {
+      "In": 55,
+      "Out": 55,
+      "Atts": {
+        "COD_TIPO_ORG_PR": 1,
+        "DATA_POSA": "<3><4><5>"
+      }
+    },
+    {
+      "In": 652,
+      "Out": 55,
+      "Atts": {
+        "COD_TIPO_ORG_PR": 12,
+        "DATA_POSA": "<3><4><5>"
+      }
+    },
+    {
+      "In": 650,
+      "Out": 55,
+      "Atts": {
+        "COD_TIPO_ORG_PR": 1,
+        "DATA_POSA": "<3><4><5>"
       }
     }
   ]

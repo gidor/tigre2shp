@@ -1,0 +1,5 @@
+defaults:
+    Atts:
+      SYS_COD_COMUNE: '1'
+      COMUNE: Piano di Sorrento
+      DATA_POSA: '99990101'

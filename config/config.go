@@ -11,29 +11,44 @@ import (
 )
 
 // the configuration
-var config map[string]interface{}
+var config, defaults map[string]interface{}
 
-func set() map[string]interface{} {
-	dir, err := filepath.Abs(filepath.Dir(os.Args[0]))
-	if err != nil {
-		log.Fatal(err)
-	}
-	data, err := ioutil.ReadFile(filepath.Join(dir, "config.json"))
-	if err != nil {
-		return nil
-	}
+func set() {
+	if config == nil || defaults == nil {
+		dir, err := filepath.Abs(filepath.Dir(os.Args[0]))
+		if err != nil {
+			log.Fatal(err)
+		}
+		if config == nil {
+			data, err := ioutil.ReadFile(filepath.Join(dir, "config.json"))
+			if err == nil {
+				err = json.Unmarshal(data, &config)
+			}
+		}
 
-	var config map[string]interface{}
-	err = json.Unmarshal(data, &config)
-	return config
+		if defaults == nil {
+			data, err := ioutil.ReadFile(filepath.Join(dir, "defaults.json"))
+			if err == nil {
+				err = json.Unmarshal(data, &defaults)
+			}
+		}
+	}
 }
 
 type confT map[string]interface{}
 
 // Get  get a config item fo a list of keys te configuration
+func Defaults(keys ...string) (interface{}, bool) {
+	if defaults == nil {
+		set()
+	}
+	return Navigate(interface{}(defaults), keys...)
+}
+
+// Get  get a config item fo a list of keys te configuration
 func Get(keys ...string) (interface{}, bool) {
 	if config == nil {
-		config = set()
+		set()
 	}
 	return Navigate(interface{}(config), keys...)
 }
@@ -45,7 +60,7 @@ func Navigate(root interface{}, keys ...string) (interface{}, bool) {
 	)
 	if root == nil {
 		if config == nil {
-			config = set()
+			set()
 		}
 		value = interface{}(config)
 	}
