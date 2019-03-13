@@ -4,3 +4,4 @@ tigre2shp
 tigre2shp.exe
 .vscode
 example_data/out/
+.build
