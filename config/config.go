@@ -37,7 +37,7 @@ func set() {
 
 type confT map[string]interface{}
 
-// Get  get a config item fo a list of keys te configuration
+//Defaults Get  get a config item fo a list of keys te configuration
 func Defaults(keys ...string) (interface{}, bool) {
 	if defaults == nil {
 		set()
@@ -53,7 +53,7 @@ func Get(keys ...string) (interface{}, bool) {
 	return Navigate(interface{}(config), keys...)
 }
 
-// Navigate an item for a list og keys
+// Navigate -- an item for a list og keys
 func Navigate(root interface{}, keys ...string) (interface{}, bool) {
 	var (
 		value interface{}
@@ -79,7 +79,7 @@ func Navigate(root interface{}, keys ...string) (interface{}, bool) {
 	return value, true
 }
 
-// GetArray
+//GetArray --
 func GetArray(root interface{}, keys ...string) ([]interface{}, bool) {
 	value, ok := Navigate(root, keys...)
 	m, ok := value.([]interface{})
@@ -89,7 +89,7 @@ func GetArray(root interface{}, keys ...string) ([]interface{}, bool) {
 	return m, ok
 }
 
-// GetArray
+//GetMap --
 func GetMap(root interface{}, keys ...string) (map[string]interface{}, bool) {
 	value, ok := Navigate(root, keys...)
 	m, ok := value.(map[string]interface{})
@@ -99,7 +99,7 @@ func GetMap(root interface{}, keys ...string) (map[string]interface{}, bool) {
 	return m, ok
 }
 
-// GetInt
+//GetInt --
 func GetInt(root interface{}, keys ...string) (int, bool) {
 	value, ok := Navigate(root, keys...)
 	if !ok {
@@ -122,7 +122,7 @@ func GetInt(root interface{}, keys ...string) (int, bool) {
 	}
 }
 
-// GetString
+//GetString naviga un oggetto di configurazione e ne estare una stringa
 func GetString(root interface{}, keys ...string) (string, bool) {
 	value, ok := Navigate(root, keys...)
 	if !ok {
@@ -141,7 +141,7 @@ func GetString(root interface{}, keys ...string) (string, bool) {
 
 }
 
-// GetFloat
+// GetFloat --
 func GetFloat(root interface{}, keys ...string) (float64, bool) {
 	value, ok := Navigate(root, keys...)
 	if !ok {

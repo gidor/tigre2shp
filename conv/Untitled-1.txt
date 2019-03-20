@@ -1,0 +1,19 @@
+CREATE TABLE features (
+    id INTEGER primary KEY,
+	fcode	INTEGER,
+	nome	TEXT,
+	table_name	TEXT,
+	tipologia	TEXT,
+	cartografia	TEXT,
+	posizionamento	TEXT,
+	frazionamento	TEXT,
+	geometry	TEXT,
+	disattivato	TEXT,
+	comportamento	TEXT,
+	disattivabile	TEXT,
+	secondary	TEXT
+);
+
+insert into( fcode, nome, tipologia, cartografia, posizionamento, frazionamento, geometry, disattivato, comportamento, disattivabile, secondary )
+select fcode, nome, tipologia, cartografia, posizionamento, frazionamento, geometry, disattivato, comportamento, disattivabile, secondary 
+from ig.features;

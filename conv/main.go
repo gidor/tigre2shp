@@ -165,8 +165,6 @@ func cancellamiglob(base string) ([]string, error) {
 }
 
 func Main() {
-	// conf, _ := config.Get()
-	// fmt.Println(conf)
 	var (
 		dirMeta, dirShp string
 		err             error
