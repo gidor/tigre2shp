@@ -102,7 +102,7 @@ func Attributi(fcode int64) []Attributo {
 	dbinit()
 	sqlStmt := `
 	SELECT 
-		f.campo,
+		upper(f.campo) campo,
 		f.formato,
 		f.lun, 
 		f.obbligatorio,
@@ -175,7 +175,7 @@ type AttMapping struct {
 func AttMappings(fcin uint32, fcout uint32) []AttMapping {
 	res := make([]AttMapping, 0)
 	dbinit()
-	sqlStmt := "SELECT attributo, valore from mappings where fcin=$1 and fcout=$2"
+	sqlStmt := "SELECT upper(attributo) attributo, valore from mappings where fcin=$1 and fcout=$2"
 	rows, err := confdb.Query(sqlStmt, fcin, fcout)
 	if err != nil {
 		log.Fatal(err)
@@ -263,7 +263,7 @@ type DefaultValue struct {
 func DefaultValues() []DefaultValue {
 	res := make([]DefaultValue, 0)
 	dbinit()
-	sqlStmt := "SELECT attributo, valore from conf_defaults"
+	sqlStmt := "SELECT upper(attributo) attributo, valore from conf_defaults"
 	rows, err := confdb.Query(sqlStmt)
 	if err != nil {
 		log.Fatal(err)

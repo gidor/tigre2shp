@@ -111,16 +111,16 @@ func process(outdataset *DataSet, oggetti []tigre.Oggetto, mappings map[uint32]M
 			}
 			if len(val) > 0 {
 				shpfile.handler.WriteAttribute(int(index), i, convertvalue(f, val))
-				if f.FName == "DATA_POSA" {
-					fmt.Println(val)
-				}
+				// if f.FName == "DATA_POSA" {
+				// 	fmt.Println(val)
+				// }
 			} else {
 				// non ho mapping  verifico default
 				if len(f.Default) > 0 {
 					shpfile.handler.WriteAttribute(int(index), i, convertvalue(f, f.Default))
-					if f.FName == "DATA_POSA" {
-						fmt.Println(convertvalue(f, f.Default))
-					}
+					// if f.FName == "DATA_POSA" {
+					// 	fmt.Println(convertvalue(f, f.Default))
+					// }
 				}
 			}
 		}
