@@ -3,6 +3,7 @@ example_data/**/*.*
 tigre2shp
 *.sqlite
 tigre2shp.exe
+tigre2shp.log
 .vscode
 example_data/out/
 .build
